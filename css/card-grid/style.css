@@ -18,6 +18,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
     text-align: center;
+    text-shadow: 2px 2px 4px pink;
 }
 .card-portrait img{
     width: 100%;
