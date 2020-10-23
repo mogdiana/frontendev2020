@@ -1,0 +1,54 @@
+.grid {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+}
+
+.card {
+    border: 1px solid gray;
+    width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    display:grid;
+    grid-template-areas: 
+    "fullname fullname"
+    "card-portrait card-info"
+    "motto motto";
+    grid-template-columns: 120px auto;
+    grid-template-rows: 70px auto 50px;
+}
+
+.fullname h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-portrait img{
+    width: 100%;
+}
+
+.card-info strong {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+}
+.motto{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    grid-area: motto;
+}
+
+.fullname{
+    grid-area: fullname;
+}
+
+.card-portrait{
+    grid-area: card-portrait;
+    padding-left: 5px;
+}
+
+.card-info{
+    grid-area: card-info;
+}
+

@@ -1,0 +1,39 @@
+.main-header{
+    background: rgba(150, 130, 180, 2);
+    grid-area: main-header;
+}
+
+.navigare{
+    background: rgba(110, 30, 180, 2);
+    grid-area: navigare;
+}
+.block1{
+    display: inline-block;
+    background: chocolate;
+}
+
+.contents{
+    display: inline-block;
+    background-color: skyblue;
+    grid-area: contents;
+}
+
+.block2{
+    display: inline-block;
+    background: teal;
+}
+
+.main-footer{
+    background: violet;
+    grid-area: main-footer;
+}
+ body{
+     display:grid;
+     grid-template-areas: 
+     "main-header main-header main-header"
+     "navigare navigare navigare"
+     "block1 contents block2"
+     "main-footer main-footer main-footer";
+     grid-template-columns: 100px auto 100px;
+     grid-template-rows: 100px 40px 300px 100px;
+ }
