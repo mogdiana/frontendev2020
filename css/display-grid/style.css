@@ -1,39 +1,119 @@
-.main-header{
-    background: rgba(150, 130, 180, 2);
-    grid-area: main-header;
+body{
+    display:grid;
+    grid-template-areas: 
+    "main-header main-header main-header"
+    "navigare navigare navigare"
+    "block1 contents block2"
+    "main-footer main-footer main-footer";
+    grid-template-columns: 250px auto 200px;
+    grid-template-rows: 100px 40px auto 100px; 
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vw;
+    background: url(img/apple.jpg);
+    background-attachment: fixed;
 }
 
-.navigare{
-    background: rgba(110, 30, 180, 2);
-    grid-area: navigare;
+.main-header{
+   background: rgba(150, 130, 180, 2);
+   grid-area: main-header;
+   display: grid;
+   grid-template-columns: 1fr 11fr;
 }
+
+header #logo{
+    height: 7.5vw;
+}
+header h1{
+    text-align: center;
+}
+nav{
+   background: rgba(110, 30, 180, 0.2);
+   grid-area: navigare;
+   position: sticky;
+   top: 0px;
+}
+
+aside{
+   max-height: 400px;
+}
+
 .block1{
-    display: inline-block;
-    background: chocolate;
+   background: chocolate;
 }
 
 .contents{
-    display: inline-block;
-    background-color: skyblue;
-    grid-area: contents;
+   background-color: skyblue;
+   grid-area: contents;
+   padding: 20px;
+   font-size: 1vw;
+   text-align: justify;
 }
 
 .block2{
-    display: inline-block;
-    background: teal;
+   background: teal;
 }
 
 .main-footer{
-    background: violet;
-    grid-area: main-footer;
+   background: violet;
+   grid-area: main-footer;
+   color: white;
+   text-align: center
 }
- body{
-     display:grid;
-     grid-template-areas: 
-     "main-header main-header main-header"
-     "navigare navigare navigare"
-     "block1 contents block2"
-     "main-footer main-footer main-footer";
-     grid-template-columns: 100px auto 100px;
-     grid-template-rows: 100px 40px 300px 100px;
+
+.menu{
+   display: grid;
+   grid-template-columns: repeat(5, 20%);
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.menu li{
+   margin: 0;
+   padding: 0;
+}
+
+.menu li a{
+   background: rgb(50, 98, 187);
+   display: block;
+   height: 40px;
+   text-align: center;
+   line-height: 40px;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: rgb(214, 214, 214);
+   font-weight: bold;
+   font-size: 26px;
+}
+
+.menu li a:hover{
+   background: rgb(146, 179, 216);
+   color: blanchedalmond;
+}
+
+.menu-vertical{
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(5, 40px);
+}
+
+.menu-vertical li a{
+   background: rgb(130, 131, 167);
+}
+.menu-horizontal{
+    grid-template-columns: repeat(5, 20%);
  }
+
+ .menu-horizontal li a{
+    background: rgb(179, 143, 238);
+ }
+
+#chat{
+   position: fixed;
+   bottom: 0;
+   right: 0;
+   width: 300px;
+   height: 50px;
+   background: grey;
+}
