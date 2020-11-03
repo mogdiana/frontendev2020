@@ -11,12 +11,12 @@ body{
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5vw;
-    background: url(img/apple.jpg);
+    background: url(img/fundal3.jpg);
     background-attachment: fixed;
 }
 
 .main-header{
-   background: rgba(150, 130, 180, 2);
+   background: rgb(238, 219, 230);
    grid-area: main-header;
    display: grid;
    grid-template-columns: 1fr 11fr;
@@ -29,7 +29,7 @@ header h1{
     text-align: center;
 }
 nav{
-   background: rgba(110, 30, 180, 0.2);
+   background: rgb(221, 182, 182);
    grid-area: navigare;
    position: sticky;
    top: 0px;
@@ -40,11 +40,11 @@ aside{
 }
 
 .block1{
-   background: chocolate;
+  /* background: chocolate;*/
 }
 
 .contents{
-   background-color: skyblue;
+   background-color: white;
    grid-area: contents;
    padding: 20px;
    font-size: 1vw;
@@ -52,11 +52,11 @@ aside{
 }
 
 .block2{
-   background: teal;
+   /*background: teal;*/
 }
 
 .main-footer{
-   background: violet;
+   background: rgb(161, 159, 197);
    grid-area: main-footer;
    color: white;
    text-align: center
@@ -76,7 +76,6 @@ aside{
 }
 
 .menu li a{
-   background: rgb(50, 98, 187);
    display: block;
    height: 40px;
    text-align: center;
@@ -97,10 +96,10 @@ aside{
    grid-template-columns: 1fr;
    grid-template-rows: repeat(5, 40px);
 }
-
 .menu-vertical li a{
-   background: rgb(130, 131, 167);
+   color: black;
 }
+
 .menu-horizontal{
     grid-template-columns: repeat(5, 20%);
  }
