@@ -47,7 +47,7 @@ let sum = 0;
 numere.forEach(numar =>{
     sum += numar;}
 )
-console.log(sum);
+console.log("Suma = ",sum);
 
 console.clear();
 for (const key in luni)
