@@ -1,0 +1,120 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 952px;
+    position: relative;
+    font-family: Nunito;
+}
+#page-background{
+    background-color: #F9BDBD;
+    width: 370px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 150px;
+    z-index: -1;
+
+}
+header {
+    padding-top: 23px;
+    border: 1px solid red;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+header nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 45px 68px 96px 77px 74px 150px;
+    column-gap: 28px;
+   
+}
+header nav ul li{
+    text-align: center;
+}
+header nav ul li a{
+    font-size: 16px;
+    color: rgba(34, 34, 34, 0.75);
+    text-decoration: none;
+    line-height: 22px;
+    font-weight: normal;
+    font-style: normal;
+}
+header nav ul li a.active{
+    font-weight: 800;
+    color: #DAA520;
+}
+
+header nav ul li a.signup{
+    text-transform: uppercase;
+    border: 1px solid #3E3F43;
+    font-weight: bold;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+section{
+    border: 1px solid red;
+}
+section#main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 5em;
+    min-height: 700px;
+}
+section#main div{
+    display: grid;
+    grid-template-rows: 100px 200px 40px;
+}
+
+section#main div p{
+    margin: 0;
+    font-size: 36px;
+    width: 504px;
+} 
+section#main img{
+    margin-left: -80px;
+    margin-top: -50px;
+}
+section#main div h1{
+    margin: 0;
+    font-size: 72px;
+    font-weight: bold;
+    color: #313235;
+}
+section#main div button{
+    border-radius: 4px;
+    background-color: #DAA520;
+    border: none;
+    color: white;
+    width: 175px;
+    height: 50px;
+}
+
+section#about .section-title{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 30px 205px 316px 379px;
+    align-items: center;
+    
+}
+
+section#about .section-title div:nth-child(2){
+    font-size: 36px;
+    font-weight: bold;
+}
+section#about .section-title h2{
+    color: #222222;
+    font-size: 72px;
+    opacity: 0.7;
+    font-weight: bold;
+}
+footer{
+    border: 1px solid red;
+    height: 100px;
+}
+
