@@ -93,14 +93,16 @@ section#main div button{
     width: 175px;
     height: 50px;
 }
-
+section#main div button:hover{
+    border: 2px solid black;
+}
 section#about .section-title{
     margin: 0;
+    margin-bottom: 100px;
     padding: 0;
     display: grid;
     grid-template-columns: 30px 205px 316px 379px;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 section#about .section-title div:nth-child(2){
@@ -112,7 +114,50 @@ section#about .section-title h2{
     font-size: 72px;
     opacity: 0.7;
     font-weight: bold;
+    margin: 0;
 }
+section#about #article1{
+    position: relative;
+    display: grid;
+    grid-template-columns: 400px 430px;
+    column-gap: 60px;
+}
+section#about #article2{
+    display: grid;
+    grid-template-columns: auto 287px;
+    column-gap: 60px;
+}
+article header{
+    margin: 0;
+    margin-top: 40px;
+    padding: 0;
+    display: block;
+    font-size: 34px;
+    line-height: 49px;
+    color: #3E3F43;
+}
+#article1 .rectangle{
+    position: absolute;
+    z-index: -1;
+    width: 280px;
+    height: 390px;
+    /* left: 100px; */
+    top: -80px; 
+    border-radius: 0px 100px 0px 100px;
+    background: #F7DEA6;
+    box-sizing: border-box;
+}
+
+article p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+}
+#article1 img {
+    margin: 0;
+    margin-left: 30px;
+}
+
 footer{
     border: 1px solid red;
     height: 100px;
